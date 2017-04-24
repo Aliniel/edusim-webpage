@@ -374,7 +374,11 @@ top: -8px;
     position: relative;
 }
 
-.work-item > img {
+.work-item > div {
+  margin: 10px;
+}
+
+.work-item > div > img {
   display: block;
   height: auto;
   max-width: 100%;
@@ -499,6 +503,27 @@ top: -8px;
 /*  padding: 10px 0 0;*/
   width: 42px;
 }
+
+
+/*=========================================
+	Marketing
+==========================================*/
+
+div.marketing-list li {
+  color: #0eb493;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+div.marketing-list li > a {
+  color: #5b646e;
+}
+
+div.img-center {
+  margin: 35px 0;
+}
+
 
 
 /*=========================================
