@@ -110,6 +110,11 @@ body > section,
     text-transform: uppercase;
 }
 
+.file-download-icon {
+  font-size: 1.8em;
+  vertical-align: middle;
+}
+
 .devider {
   margin-top: 30px;
 }
