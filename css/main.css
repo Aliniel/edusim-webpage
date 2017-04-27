@@ -157,6 +157,17 @@ body > section,
   top: 48%;
 }
 
+.fa-button {
+    -webkit-transition: all .3s ease-in 0s;
+       -moz-transition: all .3s ease-in 0s;
+        -ms-transition: all .3s ease-in 0s;
+         -o-transition: all .3s ease-in 0s;
+            transition: all .3s ease-in 0s;
+}
+
+.fa-button:hover {
+  color: #00afd8;
+}
 
 /*=========================================
 	Header
