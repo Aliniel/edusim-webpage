@@ -10,18 +10,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <!-- Page Title -->
     <title>EduSim - Team 13</title>
-    <!-- Meta Description -->
-    <meta name="description" content="Blue One Page Creative HTML5 Template">
-    <meta name="keywords" content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
-    <meta name="author" content="Muhammad Morshed">
-    <!-- Mobile Specific Meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Icon -->
     <link href="img/edusim-nav-logo.png" rel="icon"/>
 
     <!-- Google Font -->
-
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- CSS
@@ -685,7 +678,7 @@ Meet Our Team
             </div>
 
             <div class="sec-sub-title text-center wow fadeInRight animated">
-                <img src="img/team/us.jpg" width="100%" alt="Our picture!"></img>
+                <img src="img/team/us.png" width="100%" alt="Our picture!"></img>
             </div>
 
             <div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
@@ -887,11 +880,6 @@ End About Project
 <script src="js/jquery-countTo.js"></script>
 <!-- jquery.appear -->
 <script src="js/jquery.appear.js"></script>
-<!-- Contact form validation -->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
-<!-- Google Map -->
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <!-- jquery easing -->
 <script src="js/jquery.easing.min.js"></script>
 <!-- jquery easing -->
@@ -909,62 +897,5 @@ wow.init();
 </script>
 <!-- Custom Functions -->
 <script src="js/custom.js"></script>
-
-<script type="text/javascript">
-$(function(){
-    /* ========================================================================= */
-    /*    Contact Form
-    /* ========================================================================= */
-
-    $('#contact-form').validate({
-        rules: {
-            name: {
-                required: true,
-                minlength: 2
-            },
-            email: {
-                required: true,
-                email: true
-            },
-            message: {
-                required: true
-            }
-        },
-        messages: {
-            name: {
-                required: "come on, you have a name don't you?",
-                minlength: "your name must consist of at least 2 characters"
-            },
-            email: {
-                required: "no email, no message"
-            },
-            message: {
-                required: "um...yea, you have to write something to send this form.",
-                minlength: "thats all? really?"
-            }
-        },
-        submitHandler: function(form) {
-            $(form).ajaxSubmit({
-                type:"POST",
-                data: $(form).serialize(),
-                url:"process.php",
-                success: function() {
-                    $('#contact-form :input').attr('disabled', 'disabled');
-                    $('#contact-form').fadeTo( "slow", 0.15, function() {
-                        $(this).find(':input').attr('disabled', 'disabled');
-                        $(this).find('label').css('cursor','default');
-                        $('#success').fadeIn();
-                    });
-                },
-                error: function() {
-                    $('#contact-form').fadeTo( "slow", 0.15, function() {
-                        $('#error').fadeIn();
-                    });
-                }
-            });
-        }
-    });
-});
-</script>
 </body>
 </html>
